@@ -29,7 +29,7 @@ namespace SimpleCoreApi.Controllers
 
             var result = new
             {
-                MachineName = Environment.MachineName,
+                Machine = Environment.MachineName,
                 Environment = _config.GetValue<string>("ASPNETCORE_ENVIRONMENT"),
                 LogJsonPath = logFolder
             };
